@@ -1,0 +1,13 @@
+View的基本用法
+1，自定义View
+    继承View或继承Layout(linearLayout等)
+2，view组合
+    多个View组合成一个View
+
+1,ImageTextView代码中的问题
+LayoutInflater.from(context).inflate(R.layout.view_image_text_view, this, true);
+抛出异常: Caused by: java.lang.StackOverflowError: stack size 8MB
+原因是ImageTextView重写或重载了父类的方法setSelected(boolean selected),在LayoutInflater加载view的时候，
+做了contentView.setSelected(isSelected)操作,然而总的页面还在映射，这里出现了迭代，然后报栈满异常
+
+2,

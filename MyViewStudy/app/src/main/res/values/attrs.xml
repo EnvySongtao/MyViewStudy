@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageTextView">
+        <attr name="image_text_image_src" format="reference" />
+        <attr name="image_text_image_width" format="dimension" />
+        <attr name="image_text_image_height" format="dimension" />
+        <attr name="image_text_text" format="string" />
+        <attr name="image_text_text_size" format="dimension" />
+        <attr name="image_text_text_color" format="color" />
+        <attr name="image_text_selected" format="boolean"/>
+    </declare-styleable>
+</resources>
