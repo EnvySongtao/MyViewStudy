@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<script type="text/javascript">
+  function gotoActivity(activity) {
+    ActWebviewTest.toActivity(activity);
+  }
+
+  function toDoAndroid(action) {
+    ActWebviewTest.toDoAndroid(action);
+  }
+
+    //在Android代码中调用此方法
+  function androidCall(message){
+    alert("来自App的信息："+message);
+  }
+
+   //js自动弹的信息
+  function alertCall(){
+    alert("js自动弹的信息!");
+  }
+
+
+
+
+</script>
+<body>
+<p/>
+<p/>
+<p/>
+<button onClick="gotoActivity('MainAct')">gotoActivity'MainAct'-js</button>
+<p/>
+<p/>
+<p/>
+<button onClick="gotoActivity('ActNetSpeedTest')">gotoActivity'ActNetSpeedTest'-js</button>
+<p/>
+<p/>
+<p/>
+<button onClick="window.ActWebviewTest.clickMoreOnAndroid()">window.ActWebviewTest.clickMoreOnAndroid()
+</button>
+<p/>
+<p/>
+<p/>
+
+<p/>
+<p/>
+<p/>
+<p/>
+<a href="myapp://tonative/param?id=123">gotoActivity-href</a>
+<p/>
+<p/>
+<p/>
+<p/>
+<a href="http://www.baidu.com">openHttpLink-href</a>
+<p/>
+<p/>
+<p/>
+<p/>
+<a href="file:///android_asset/test.html">openLocalFile-href</a>
+
+<p/>
+<p/>
+<p/>
+<p/>
+
+<p/>
+<p/>
+<p/>
+<button onClick="toDoAndroid('action')">toDoAndroid('action')-js</button>
+<p/>
+<p/>
+<p/>
+<button onClick="alertCall()">alertCall()-js</button>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="10000dp">
+    <!--android:minWidth="10000dp" //全屏-->
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="100dp"
+        android:src="@color/colorPrimary" />
+</LinearLayout>

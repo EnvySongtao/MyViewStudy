@@ -5,16 +5,37 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.gst.myviewstudy.baseUsed.ImageTextView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        app:image_text_image_height="50dp"
-        app:image_text_image_width="90dp"
-        app:image_text_image_src="@mipmap/ic_launcher"
-        app:image_text_text="ImageTextView"
-        app:image_text_text_color="@color/colorAccent"
-        app:image_text_text_size="20sp">
+    <!--<com.gst.myviewstudy.baseUsed.ImageTextView-->
+    <!--android:layout_width="180dp"-->
+    <!--android:layout_height="180dp"-->
+    <!--app:image_text_image_height="50dp"-->
+    <!--app:image_text_image_width="90dp"-->
+    <!--app:image_text_image_src="@mipmap/ic_launcher"-->
+    <!--app:image_text_text="ImageTextView"-->
+    <!--app:image_text_text_color="@color/colorAccent"-->
+    <!--app:image_text_text_size="20sp">-->
+    <!--</com.gst.myviewstudy.baseUsed.ImageTextView>-->
 
-    </com.gst.myviewstudy.baseUsed.ImageTextView>
+    <!--<com.gst.myviewstudy.baseUsed.SginView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
 
+    <!--<com.gst.myviewstudy.other.CirclePointsView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:layout_marginRight="50dp"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--app:count="6"-->
+    <!--app:focus_color="@color/colorAccent"-->
+    <!--app:normal_color="@color/colorPrimary"-->
+    <!--app:radiu="14dp"-->
+    <!--app:space="30dp" />-->
+
+    <com.gst.myviewstudy.other.CircleWaveView
+        android:id="@+id/cwv_show"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp" />
 </LinearLayout>

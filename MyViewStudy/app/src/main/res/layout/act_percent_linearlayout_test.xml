@@ -1,0 +1,71 @@
+<com.gst.myviewstudy.percentLayout.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gst.myviewstudy.percentLayout.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        app:layout_heightPercent="20%">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:text="helloworld"
+            app:layout_heightPercent="100%"
+            app:layout_textSizePercent="75%"
+            app:layout_widthPercent="50%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000ff"
+            android:text="helloworld"
+            app:layout_heightPercent="100%"
+            app:layout_textSizePercent="75%"
+            app:layout_widthPercent="50%" />
+
+    </com.gst.myviewstudy.percentLayout.PercentLinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        android:text="helloworld"
+        app:layout_heightPercent="20%"
+        app:layout_textSizePercent="15%"
+        app:layout_widthPercent="50%" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        android:text="helloworld"
+        app:layout_heightPercent="20%"
+        app:layout_textSizePercent="15%"
+        app:layout_widthPercent="50%" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        android:text="helloworld"
+        app:layout_heightPercent="20%"
+        app:layout_textSizePercent="15%"
+        app:layout_widthPercent="50%" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        android:text="helloworld"
+        app:layout_heightPercent="20%"
+        app:layout_textSizePercent="15%"
+        app:layout_widthPercent="50%" />
+
+</com.gst.myviewstudy.percentLayout.PercentLinearLayout>

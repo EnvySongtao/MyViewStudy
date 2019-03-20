@@ -257,6 +257,6 @@ public class LogUtil {
 
 
     public static StackTraceElement getCallerStackTraceElement() {
-        return Thread.currentThread().getStackTrace()[3];
+        return Thread.currentThread().getStackTrace()[4];
     }
 }

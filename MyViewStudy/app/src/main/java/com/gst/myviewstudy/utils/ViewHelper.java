@@ -1,13 +1,17 @@
 package com.gst.myviewstudy.utils;
 
 import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.graphics.Paint;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.text.util.Linkify;
 import android.view.View;
 import android.widget.TextView;
+
+import com.gst.myviewstudy.MyApp;
 
 /**
  * author: GuoSongtao on 2017/12/28 15:21
@@ -15,6 +19,7 @@ import android.widget.TextView;
  */
 
 public class ViewHelper {
+
 
     /**
      * findViewById
@@ -81,7 +86,27 @@ public class ViewHelper {
     }
 
     /**
-     *
+     * 设置应用的显示字体，比较耗时
+     * @param context
+     * @param ttfPath 字体文件.ttf的位置
+     * @return
+     */
+    public static Typeface initTypeface(Context context,String ttfPath) {
+        if (context == null) return null;
+        //得到AssetManager
+        AssetManager mgr = context.getAssets();
+        //根据路径得到Typeface
+        Typeface tf = null;
+        try {
+            tf = Typeface.createFromAsset(mgr,ttfPath);
+//            tf = Typeface.createFromAsset(mgr, "fonts/fangzhengpangtou.ttf");
+        } catch (Exception e) {
+        }
+        return tf;
+    }
+
+    /**
+     * 设置应用的显示字体，比较耗时
      * @param context
      * @return
      */
@@ -96,5 +121,21 @@ public class ViewHelper {
         } catch (Exception e) {
         }
         return tf;
+    }
+
+    /**
+     * @param colorId
+     * @return
+     */
+    public static int getColor(int colorId) {
+        return ContextHelper.getAppRescources().getColor(colorId);
+    }
+
+    /**
+     * @param colorId
+     * @return
+     */
+    public static Drawable getDrawable(int colorId) {
+        return ContextHelper.getAppRescources().getDrawable(colorId);
     }
 }

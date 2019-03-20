@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_view_wuzi_panel_bg">
+
+    <com.gst.myviewstudy.gameView.WuziqiPanel
+        android:id="@+id/action_settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+    <!--<com.gst.myviewstudy.gameView.Game1024Layout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_margin="35dp">-->
+
+    <!--</com.gst.myviewstudy.gameView.Game1024Layout>-->
+</RelativeLayout>

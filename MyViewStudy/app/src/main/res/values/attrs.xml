@@ -9,4 +9,37 @@
         <attr name="image_text_text_color" format="color" />
         <attr name="image_text_selected" format="boolean"/>
     </declare-styleable>
+
+
+    <declare-styleable name="CirclePointsView">
+        <!-- count：圆钮的数量 -->
+        <attr name="count" format="integer" />
+        <!-- radius：圆钮的半径 -->
+        <attr name="radiu" format="dimension" />
+        <!-- space：圆钮的的间距 -->
+        <attr name="space" format="dimension" />
+        <!-- normal_color： 圆钮缺省颜色 -->
+        <attr name="normal_color" format="color|reference" />
+        <!-- focus_color：圆钮焦点颜色 -->
+        <attr name="focus_color" format="color|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string"/>
+        <attr name="layout_heightPercent" format="string"/>
+        <attr name="layout_marginPercent" format="string"/>
+        <attr name="layout_marginLeftPercent" format="string"/>
+        <attr name="layout_marginTopPercent" format="string"/>
+        <attr name="layout_marginRightPercent" format="string"/>
+        <attr name="layout_marginBottomPercent" format="string"/>
+        <attr name="layout_marginStartPercent" format="string"/>
+        <attr name="layout_marginEndPercent" format="string"/>
+        <attr name="layout_textSizePercent" format="string"/>
+        <attr name="layout_maxWidthPercent" format="string"/>
+        <attr name="layout_maxHeightPercent" format="string"/>
+        <attr name="layout_minWidthPercent" format="string"/>
+        <attr name="layout_minHeightPercent" format="string"/>
+    </declare-styleable>
+
 </resources>

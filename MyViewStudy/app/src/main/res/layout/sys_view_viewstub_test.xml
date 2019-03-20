@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_behind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#339999"
+        android:text="tv_behind"
+        android:textSize="22sp" />
+
+    <ViewStub
+        android:id="@+id/vs_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp" />
+
+    <TextView
+        android:id="@+id/tv_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="60dp"
+        android:background="#999922"
+        android:text="tv_front"
+        android:textSize="22sp" />
+
+</RelativeLayout>

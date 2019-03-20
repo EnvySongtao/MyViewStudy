@@ -10,7 +10,7 @@ import android.os.Looper;
  */
 
 public class MainHandler extends Handler {
-    private static MainHandler ourInstance = null;
+    private static MainHandler ourInstance = new MainHandler(Looper.getMainLooper());;
 
 //    public static MainHandler getInstance() {
 //        return ourInstance;
